@@ -12,7 +12,7 @@ const Contact = () => {
               Let's <span className="text-primary">Connect</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Whether you need a developer, a teammate, or just want to chat about tech and volleyball—I'm all ears.
+              Whether you need a developer, a teammate, or just want to chat about tech—I'm all ears.
             </p>
           </div>
 
@@ -22,13 +22,13 @@ const Contact = () => {
                 <div>
                   <h3 className="text-2xl font-bold mb-4">Get In Touch</h3>
                   <p className="text-muted-foreground">
-                    Open to freelance opportunities, collaborations, and interesting projects. 
+                    Open to freelance opportunities, collaborations, and interesting projects.
                     Let's build something amazing together!
                   </p>
                 </div>
 
                 <div className="space-y-4">
-                  <a 
+                  <a
                     href="mailto:miguelinganji@gmail.com"
                     className="flex items-center gap-3 text-foreground hover:text-primary transition-colors group"
                   >
@@ -41,7 +41,7 @@ const Contact = () => {
                     </div>
                   </a>
 
-                  <a 
+                  <a
                     href="tel:0795166720"
                     className="flex items-center gap-3 text-foreground hover:text-primary transition-colors group"
                   >
@@ -65,15 +65,18 @@ const Contact = () => {
                 </div>
 
                 <div className="space-y-3">
-                  <Button 
+                  <Button
                     className="w-full justify-start bg-primary/20 hover:bg-primary/30 text-primary border border-primary/50"
                     variant="outline"
+                    asChild
                   >
-                    <Github className="w-5 h-5 mr-3" />
-                    GitHub Profile
+                    <a href="https://github.com/miggy250" target="_blank" rel="noopener noreferrer">
+                      <Github className="w-5 h-5 mr-3" />
+                      GitHub Profile
+                    </a>
                   </Button>
 
-                  <Button 
+                  <Button
                     className="w-full justify-start bg-primary/20 hover:bg-primary/30 text-primary border border-primary/50"
                     variant="outline"
                   >
@@ -83,11 +86,14 @@ const Contact = () => {
                 </div>
 
                 <div className="pt-6">
-                  <Button 
+                  <Button
                     className="w-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-[0_0_20px_hsl(var(--primary)/0.3)] hover:shadow-[0_0_30px_hsl(var(--primary)/0.5)] transition-all"
                     size="lg"
+                    asChild
                   >
-                    Download Resume
+                    <a href="/resume.pdf" download="Inganji_Miguel_Resume.pdf">
+                      Download Resume
+                    </a>
                   </Button>
                 </div>
               </div>
